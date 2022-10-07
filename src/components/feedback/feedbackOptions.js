@@ -1,7 +1,10 @@
 import React from "react";
 import PropTypes from 'prop-types';
 
-export const FeedbackOptions = ({ options, onAddFeedback }) => {
+export const FeedbackOptions = ({
+  options,
+  onAddFeedback
+}) => {
   return (
     <ul className="feedback">
       {options.map(key => (
