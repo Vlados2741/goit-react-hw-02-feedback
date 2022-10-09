@@ -43,6 +43,7 @@ class Feedback extends React.Component {
     render() {
     const total = this.countTotalFeedback();
     const positivePercentage = this.countPositiveFeedbackPercentage();
+    const { good, neutral, bad,} = this.state;  
     return (
       <div className="feedback">
         <Section title="Please leave feedback">
@@ -53,9 +54,9 @@ class Feedback extends React.Component {
         </Section>
         <Section title="Statistics">
           <Statistic
-            good={this.state.good}
-            neutral={this.state.neutral}
-            bad={this.state.bad}
+            good={good}
+            neutral={neutral}
+            bad={bad}
             total={total}
             positivePercentage={positivePercentage}
           />

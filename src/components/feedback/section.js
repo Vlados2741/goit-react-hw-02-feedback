@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from 'prop-types';
 
-const Section = ({ title, children }) => {
+export const Section = ({ title, children }) => {
   return (
     <div className="section">
       {title && <h2>{title}</h2>}
@@ -9,8 +9,6 @@ const Section = ({ title, children }) => {
     </div>
   );
 };
-
-export { Section };
 
 Section.propTypes = {
   title: PropTypes.string.isRequired,
